@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Tow from './Tow.js'
 
 export default function Gazi() {
     const [a, set] = useState(1)
@@ -12,6 +12,9 @@ export default function Gazi() {
     //     }))
     // }
     return (
-        <div onClick={()=>{set(a+1)}}>{a}</div>
+        <>
+            <div onClick={()=>{set(a+1)}}>{a}</div>
+            <Tow />
+        </>
     )
 }
